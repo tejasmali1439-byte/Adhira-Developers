@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adhira Developers | Quality You Can Trust</title>
+  <meta name="description" content="Residential & Commercial Construction | Renovation | Turnkey Projects | Quality construction at fair pricing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0e6fff;
+      --accent:#f5b700;
+      --dark:#0f172a;
+      --muted:#64748b;
+      --bg:#0b1020;
+      --card:#111a33;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:linear-gradient(180deg, #060a18, #0b1228);
+      color:var(--white);
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+    header{
+      position:sticky; top:0; z-index:50; backdrop-filter:blur(8px);
+      background:rgba(5,10,24,.55); border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+    .logo{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.5px}
+    .logo-badge{
+      width:34px; height:34px; border-radius:8px; background:linear-gradient(135deg, var(--accent), #ff8a00);
+      display:grid; place-items:center; color:#1a1300; font-weight:800;
+    }
+    nav ul{display:flex; gap:20px; list-style:none; padding:0; margin:0}
+    .cta{
+      background:var(--accent); color:#1a1300; padding:10px 14px; border-radius:10px; font-weight:700;
+    }
+    .hero{
+      padding:72px 0 48px; position:relative; overflow:hidden;
+      background:
+        radial-gradient(800px 300px at 80% -10%, rgba(14,111,255,.25), transparent 60%),
+        radial-gradient(700px 300px at -10% 10%, rgba(245,183,0,.15), transparent 60%);
+    }
+    .hero-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center}
+    .hero h1{font-size:42px; line-height:1.1; margin:0 0 12px}
+    .hero p{color:var(--muted); margin:0 0 22px}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; font-weight:700}
+    .btn-primary{background:var(--primary)}
+    .btn-ghost{border:1px solid rgba(255,255,255,.12)}
+    .stat{display:flex; gap:16px; margin-top:22px; color:var(--muted)}
+    .stat b{color:var(--white)}
+    .hero-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08); padding:16px; border-radius:16px
+    }
+    .hero-img{border-radius:12px; width:100%; aspect-ratio:4/3; object-fit:cover}
+    section{padding:56px 0}
+    h2{font-size:28px; margin:0 0 10px}
+    .sub{color:var(--muted); margin:0 0 24px}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+    .card{
+      background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:18px
+    }
+    .card h3{margin:0 0 8px}
+    .badge{display:inline-block; background:rgba(14,111,255,.15); color:#9cc4ff; padding:4px 10px; border-radius:999px; font-size:12px; margin-bottom:10px}
+    .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+    .gallery img{width:100%; height:190px; object-fit:cover; border-radius:10px}
+    .about{display:grid; grid-template-columns:1fr 1fr; gap:20px}
+    .list{margin:0; padding-left:18px}
+    .marquee{display:flex; gap:14px; overflow:auto; scroll-snap-type:x mandatory; padding-bottom:6px}
+    .marquee .t{min-width:320px; scroll-snap-align:start}
+    .t small{color:var(--muted)}
+    .contact{display:grid; grid-template-columns:1fr 1fr; gap:20px}
+    .contact .box{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:18px}
+    input, textarea{
+      width:100%; background:#0d152b; color:#fff; border:1px solid rgba(255,255,255,.08);
+      border-radius:10px; padding:10px 12px; margin:6px 0 12px; font:inherit
+    }
+    .footer{padding:22px 0; border-top:1px solid rgba(255,255,255,.06); color:var(--muted)}
+    @media (max-width: 900px){
+      .hero-grid, .grid-3, .about, .contact, .gallery{grid-template-columns:1fr}
+      .gallery img{height:220px}
+      nav ul{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">
+      <span class="logo-badge">AD</span>
+      <span>Adhira Developers</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="cta">Get Quote</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="https://wa.me/919168519292" target="_blank">WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Building Dreams with Precision</h1>
+      <p>Adhira Developers offers residential, commercial, renovation and turnkey projects with top quality and timely delivery at fair prices.</p>
+      <div>
+        <a class="btn btn-primary" href="tel:+919168519292">📞 Call Now</a>
+        <a class="btn btn-ghost" href="#projects">View Projects</a>
+      </div>
+      <div class="stat">
+        <div><b>10+ Years</b><br><span>Experience</span></div>
+        <div><b>120+ Sites</b><br><span>Completed</span></div>
+        <div><b>30-day</b><br><span>Defect Liability</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop" alt="Construction site">
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p class="sub">End-to-end construction solutions with transparent execution.</p>
+    <div class="grid-3">
+      <div class="card">
+        <span class="badge">Turnkey</span>
+        <h3>Residential Construction</h3>
+        <p>Architectural planning, structure, MEP, finishing — sab ek hi roof ke under.</p>
+        <ul class="list">
+          <li>G+1 to G+4 homes</li>
+          <li>Vastu-aligned layouts</li>
+          <li>Premium finishes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="badge">Commercial</span>
+        <h3>Industrial & Shops</h3>
+        <p>Warehouses, retail fit-outs, offices with safety-first execution.</p>
+        <ul class="list">
+          <li>PEB structures</li>
+          <li>Fast-track delivery</li>
+          <li>AMC available</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="badge">Renovation</span>
+        <h3>Remodeling & Interiors</h3>
+        <p>Kitchen, bathrooms, false ceiling, paint & polish — zero hassle.</p>
+        <ul class="list">
+          <li>Design to delivery</li>
+          <li>Material procurement</li>
+          <li>Warranty support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <p class="sub">Recent work highlights (replace with your photos).</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="House build">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt="Office interior">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop" alt="Cranes site">
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div>
+      <h2>About Adhira Developers</h2>
+      <p class="sub">“Quality you can trust, timelines you can plan.”</p>
+      <p>We are a construction firm focused on safety, quality and transparency. Every project is handled with dedicated site engineers, daily progress reports, and milestone-based billing.</p>
+      <ul class="list">
+        <li>Approved vendor network & QA checklists</li>
+        <li>In-house supervision and PMC</li>
+        <li>Clear BOQ & weekly updates</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Why Choose Us</h3>
+      <p>✔ Fixed timelines & contracts<br>✔ Branded materials only<br>✔ After-handover support</p>
+      <div class="stat"><div><b>95%</b><br><span>Repeat Clients</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <h2>Clients Say</h2>
+    <div class="marquee">
+      <div class="card t">
+        <p>“Ghar time par deliver hua, finishing top-notch!”</p>
+        <small>— R. Sharma</small>
+      </div>
+      <div class="card t">
+        <p>“Industrial shed 60 din me complete, great coordination.”</p>
+        <small>— A. Khan</small>
+      </div>
+      <div class="card t">
+        <p>“Renovation without hassle. Highly recommended.”</p>
+        <small>— P. Kaur</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact">
+    <div class="box">
+      <h2>Contact</h2>
+      <p class="sub">Free site visit & quotation.</p>
+      <p>📞 <b>Phone:</b> <a href="tel:+919168519292">+91 91685 19292</a></p>
+      <p>✉️ <b>Email:</b> <a href="mailto:Adhiradevelopers24@gmail.com">Adhiradevelopers24@gmail.com</a></p>
+      <p>💬 <b>WhatsApp:</b> <a href="https://wa.me/919168519292" target="_blank">Chat Now</a></p>
+    </div>
+    <div class="box">
+      <h3>Quick Enquiry</h3>
+      <form action="mailto:Adhiradevelopers24@gmail.com" method="post" enctype="text/plain">
+        <input name="name" placeholder="Your Name" required>
+        <input name="phone" placeholder="Phone" required>
+        <input name="email" type="email" placeholder="Email">
+        <textarea name="message" rows="5" placeholder="Project details"></textarea>
+        <button class="btn btn-primary" type="submit">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+    <div>© <span id="y"></span> Adhira Developers • All rights reserved.</div>
+    <div style="display:flex; gap:10px">
+      <a href="#">Privacy</a><span style="opacity:.4">•</span><a href="#contact">Get Quote</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
